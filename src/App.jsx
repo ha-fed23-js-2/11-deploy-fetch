@@ -7,7 +7,7 @@ import { saveToApi } from './api'
 function App() {
 	const [name, setName] = useState('')
 
-	const async handleSave = () => {
+	const handleSave = async () => {
 		await saveToApi('Test')
 		console.log('App.handleSave: completed');
 	}
